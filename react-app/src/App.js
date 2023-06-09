@@ -34,9 +34,10 @@ const App = () => {
             A deep learning model that accurately classifies Capuchin bird sounds and evaluates bird density in different forest locations, enabling applications in monitoring bird populations, assessing biodiversity, and supporting environmental impact assessments, with potential implications for ecological conservation and environmental planning.{' '} 
             <a href='https://github.com/yogitapattan/Capuchin-Bird-Density-Evaluation' target='_blank'>Here's the Github Repo!</a>
           </p>
-          <p><b>Instructions: </b>Please follow the below steps to test the model using sample forest recordings.</p>
+          <p><b>Instructions: </b>Please follow the steps below to test the model using sample forest recordings.</p>
           <ul className="instructions">
             <li>Select and download a forest recording from <a href='https://drive.google.com/drive/folders/1y5awpxDMqMxXgKuPHb-xKFQmVpZ37oL6?usp=sharing' target='_blank'>here</a>.</li>
+            <li>Feel free to play the audio before uploading!</li>
             <li>Click on Choose file button and Upload the recording.</li>
             <li>The Capuchin bird audio count and density is displayed.</li>
           </ul>
