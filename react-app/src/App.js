@@ -50,8 +50,8 @@ const App = () => {
           {results && (
             <div className="results">
               <h3>Results:</h3>
-              <p>Capuchin Audio Count: {results.capuchin_count}</p>
-              <p>Evaluated Density: {results.density}</p>
+              <p>Capuchin Audio Count: <b>{results.capuchin_count}</b></p>
+              <p>Evaluated Density: <b>{results.density}</b></p>
             </div>
           )}
         </section>
