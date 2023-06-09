@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Capuchin-Bird-Density-Evaluation/static/css/main.85f26d96.css",
-    "main.js": "/Capuchin-Bird-Density-Evaluation/static/js/main.f9a456f1.js",
+    "main.css": "/Capuchin-Bird-Density-Evaluation/static/css/main.b47285fe.css",
+    "main.js": "/Capuchin-Bird-Density-Evaluation/static/js/main.dde6981e.js",
     "static/media/forest.jpg": "/Capuchin-Bird-Density-Evaluation/static/media/forest.07032e9ff031b0f84f47.jpg",
     "index.html": "/Capuchin-Bird-Density-Evaluation/index.html",
-    "main.85f26d96.css.map": "/Capuchin-Bird-Density-Evaluation/static/css/main.85f26d96.css.map",
-    "main.f9a456f1.js.map": "/Capuchin-Bird-Density-Evaluation/static/js/main.f9a456f1.js.map"
+    "main.b47285fe.css.map": "/Capuchin-Bird-Density-Evaluation/static/css/main.b47285fe.css.map",
+    "main.dde6981e.js.map": "/Capuchin-Bird-Density-Evaluation/static/js/main.dde6981e.js.map"
   },
   "entrypoints": [
-    "static/css/main.85f26d96.css",
-    "static/js/main.f9a456f1.js"
+    "static/css/main.b47285fe.css",
+    "static/js/main.dde6981e.js"
   ]
 }
