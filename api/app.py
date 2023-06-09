@@ -4,7 +4,7 @@ import uvicorn
 import tensorflow as tf
 import numpy as np
 from keras.models import Sequential
-from keras.layers import Conv2D, Flatten, Dense
+from keras.layers import Conv2D, Flatten, Dense, MaxPool2D
 from itertools import groupby
 import os
 from tempfile import NamedTemporaryFile
@@ -21,15 +21,19 @@ app.add_middleware(
 )
 
 def get_model():
-  model = Sequential()
+   model = Sequential()
 
-  model.add(Conv2D(16, 3, activation='relu', input_shape=(1491, 257, 1)))
-  model.add(Conv2D(16, 3, activation = 'relu'))
-  model.add(Flatten())
-  model.add(Dense(32, activation='relu'))
-  model.add(Dense(1, activation='sigmoid'))
-  model.load_weights('capuchin_audio_classifier_e4_weights.h5')
-  return model
+   model.add(Conv2D(32, 3, activation='relu', input_shape=(1491, 257, 1)))
+   model.add(MaxPool2D(pool_size=(2,2)))
+   model.add(Conv2D(32, 3, activation = 'relu'))
+   model.add(MaxPool2D(pool_size=(2,2)))
+   model.add(Conv2D(32, 3, activation = 'relu'))
+   model.add(MaxPool2D(pool_size=(2,2)))
+   model.add(Flatten())
+   model.add(Dense(32, activation='relu'))
+   model.add(Dense(1, activation='sigmoid'))
+   model.load_weights('capuchin_audio_model_e4_weights.h5')
+   return model
 
 def load_mp3_16k_mono(filename):
     audio, _ = librosa.load(filename, sr=16000, mono=True)
