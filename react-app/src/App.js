@@ -36,7 +36,7 @@ const App = () => {
           </p>
           <p><b>Instructions: </b>Please follow the below steps to test the model using sample forest recordings.</p>
           <ul className="instructions">
-            <li>Select and download a forest recording from <a href='https://github.com/yogitapattan/Capuchin-Bird-Density-Evaluation' target='_blank'>here</a>.</li>
+            <li>Select and download a forest recording from <a href='https://drive.google.com/drive/folders/1y5awpxDMqMxXgKuPHb-xKFQmVpZ37oL6?usp=sharing' target='_blank'>here</a>.</li>
             <li>Click on Choose file button and Upload the recording.</li>
             <li>The Capuchin bird audio count and density is displayed.</li>
           </ul>
