@@ -32,7 +32,7 @@ def get_model():
    model.add(Flatten())
    model.add(Dense(32, activation='relu'))
    model.add(Dense(1, activation='sigmoid'))
-   model.load_weights('capuchin_audio_model_e4_weights.h5')
+   model.load_weights('capuchin_audio_model_e5_weights.h5')
    return model
 
 def load_mp3_16k_mono(filename):
